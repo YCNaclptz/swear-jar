@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { LogOut, Moon, Sun, Shield, LayoutDashboard, KeyRound } from 'lucide-vue-next'
+import JarIcon from '@/components/icons/JarIcon.vue'
 import ChangePasswordDialog from '@/components/ChangePasswordDialog.vue'
 import { ref } from 'vue'
 
@@ -42,7 +43,7 @@ function logout() {
     <header class="sticky top-0 z-50 border-b bg-card/80 backdrop-blur-sm">
       <div class="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <div class="flex items-center gap-4">
-          <h1 class="text-lg font-bold text-primary">🫙 髒話罐</h1>
+          <h1 class="flex items-center gap-1.5 text-lg font-bold text-primary"><JarIcon class="h-5 w-5" />髒話罐</h1>
           <Separator orientation="vertical" class="h-6" />
           <nav class="flex items-center gap-1">
             <Button

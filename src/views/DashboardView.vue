@@ -25,7 +25,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog'
-import { Plus, Pencil, Trash2, ListChecks, BarChart3 } from 'lucide-vue-next'
+import { Plus, Pencil, Trash2, ListChecks, BarChart3, FileText, Scale } from 'lucide-vue-next'
 import { toast } from 'vue-sonner'
 import EntryFormDialog from '@/components/EntryFormDialog.vue'
 
@@ -152,7 +152,7 @@ onMounted(() => {
         <!-- Empty state -->
         <Card v-else-if="!store.entries.length" class="py-12">
           <CardContent class="text-center text-muted-foreground">
-            <div class="text-4xl mb-3">📝</div>
+            <FileText class="mx-auto h-10 w-10 text-muted-foreground/50 mb-3" />
             <p class="text-lg font-medium">這個月還沒有紀錄</p>
             <p class="text-sm mt-1">點擊「新增紀錄」開始記錄</p>
           </CardContent>
@@ -195,7 +195,7 @@ onMounted(() => {
         <!-- Rules Card -->
         <Card class="mt-6">
           <CardHeader class="pb-3">
-            <CardTitle class="text-base">📋 罰款規則</CardTitle>
+            <CardTitle class="flex items-center gap-1.5 text-base"><Scale class="h-4 w-4" />罰款規則</CardTitle>
           </CardHeader>
           <CardContent class="space-y-2 text-sm">
             <div class="flex items-center justify-between">
@@ -218,7 +218,7 @@ onMounted(() => {
       <TabsContent value="summary" class="mt-4">
         <Card v-if="!store.summaries.length" class="py-12">
           <CardContent class="text-center text-muted-foreground">
-            <div class="text-4xl mb-3">📊</div>
+            <BarChart3 class="mx-auto h-10 w-10 text-muted-foreground/50 mb-3" />
             <p class="text-lg font-medium">尚無統計資料</p>
           </CardContent>
         </Card>

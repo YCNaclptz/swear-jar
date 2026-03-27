@@ -21,9 +21,9 @@ const reason = ref('')
 const fine = ref(100)
 const customFine = ref(false)
 const presets = [
-  { label: '一般 $100', value: 100 },
-  { label: '連續 $200', value: 200 },
-  { label: '攻擊 $300', value: 300 },
+  { label: '$100', value: 100 },
+  { label: '$200', value: 200 },
+  { label: '$300', value: 300 },
 ]
 
 function initForm() {

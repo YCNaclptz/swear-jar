@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { toast } from 'vue-sonner'
+import JarIcon from '@/components/icons/JarIcon.vue'
 
 const router = useRouter()
 const auth = useAuthStore()
@@ -80,7 +81,7 @@ async function handleChangePassword() {
     <div class="w-full max-w-sm">
       <!-- Logo / Title -->
       <div class="mb-8 text-center">
-        <div class="text-4xl mb-2">🫙</div>
+        <JarIcon class="mx-auto h-10 w-10 text-primary" />
         <h1 class="text-2xl font-bold text-primary">髒話罐</h1>
         <p class="mt-1 text-sm text-muted-foreground">髒話罰款紀錄系統</p>
       </div>
